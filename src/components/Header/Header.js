@@ -7,13 +7,15 @@ import Style from './Header.module.scss';
 const Header = () => {
   return (
     <div className={Style.header}>
-      <div>
+      <div className={Style.item}>
         <Link to="/">Iwasakiii</Link>
       </div>
-      <form>
-        <input type="text" placeholder="検索" />
-        <button type="submit"><FontAwesomeIcon icon={faSearch} /></button>
-      </form>
+      <div className={Style.item}>
+        <form>
+          <input type="text" placeholder="検索" />
+          <button type="submit"><FontAwesomeIcon icon={faSearch} /></button>
+        </form>
+      </div>
     </div>
   )
 }
