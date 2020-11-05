@@ -12,6 +12,7 @@ const VideoDetail = () => {
   const setSelectedVideo = async () => { 
     const searchParams = new URLSearchParams(location.search)
     const id = searchParams.get('v')
+    console.log('id', id);
     await fetchSelectedData(id).then((res) => { 
       console.log('res', res);
       const item = res.data.items.shift();
