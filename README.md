@@ -53,5 +53,4 @@ url:
 - Styled-components (CSS in JS)
 - Storybook
 - Jest
-- Cloud Firestore(DB)
-- Firebase Hosting(Hosting)
+- Versel(Hosting)

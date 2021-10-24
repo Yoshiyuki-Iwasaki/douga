@@ -1,7 +1,6 @@
 import React, { useEffect, useContext } from 'react';
 import { Store } from '../store/index';
 import { fetchRelatedData } from '../apis/index';
-import Style from '../SideList/SideList.module.scss';
 
 const SideList = () => {
 const { globalState, setGlobalState } = useContext<any>(Store);
