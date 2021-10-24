@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom';
 import { useHistory } from 'react-router-dom';
-import { Store } from '../../store/index';
+import { Store } from '../store/index';
 
 const Header = () => {
   const [term, setTerm] = useState('');
