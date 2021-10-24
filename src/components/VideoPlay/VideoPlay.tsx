@@ -1,13 +1,12 @@
 import React from 'react';
 import YouTube from 'react-youtube';
-import Style from '../VideoPlay/VideoPlay.module.scss';
 
-const VideoPlay = ({id}) => {
+const VideoPlay = ({ id }: any) => {
   return (
-    <div className={Style.wrap}>
+    <div>
       <YouTube videoId={id} />
     </div>
-  )
-}
+  );
+};
 
 export default VideoPlay;

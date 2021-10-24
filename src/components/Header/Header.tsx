@@ -2,27 +2,27 @@ import React, { useEffect, useState, useContext} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom';
-import Style from './Header.module.scss';
 import { useHistory } from 'react-router-dom';
 import { Store } from '../../store/index';
+
 const Header = () => {
   const [term, setTerm] = useState('');
   const history = useHistory();
-  const { globalState, setGlobalState } = useContext(Store);
-  const handleSubmit = e => {
+  const { globalState, setGlobalState } = useContext<any>(Store);
+  const handleSubmit = (e: any) => {
     e.preventDefault();
-    setGlobalState({type: 'SET_TERM', payload: {term}})
-    history.push(`./search?query=${term}`)
-  }
-  useEffect(() => { 
+    setGlobalState({ type: "SET_TERM", payload: { term } });
+    history.push(`./search?query=${term}`);
+  };
+  useEffect(() => {
     setTerm(globalState.term);
   })
   return (
-    <div className={Style.header}>
-      <div className={Style.item}>
+    <div>
+      <div>
         <Link to="/">Iwasakiii</Link>
       </div>
-      <div className={Style.item}>
+      <div>
         <form onSubmit={handleSubmit}>
           <input
             type="text"
