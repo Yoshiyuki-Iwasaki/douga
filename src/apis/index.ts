@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const KEY = 'AIzaSyCC3B-JuNhHT6QauJsXdJMWCg1wnub4TuY';
+const KEY = "AIzaSyDj8WzgdHgLEslbzI6xbZmsVQkSv1UCDhU";
 
 const youtube = axios.create({
   baseURL: 'https://www.googleapis.com/youtube/v3'
@@ -23,7 +23,7 @@ export const fetchPopularDate = async () => {
   })
 }
 
-export const fetchSelectedData = async (id) => {
+export const fetchSelectedData = async (id:number) => {
   return await youtube.get('videos', {
     params: {
       ...params,
@@ -32,7 +32,7 @@ export const fetchSelectedData = async (id) => {
   })
 }
 
-export const fetchRelatedData = async (id) => {
+export const fetchRelatedData = async (id:number) => {
   return await youtube.get('/search', {
     params: {
       ...params,
