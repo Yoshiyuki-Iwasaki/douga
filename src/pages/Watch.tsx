@@ -1,7 +1,7 @@
 import React from 'react';
-import Layout from '../components/Layout/Layout';
-import SideList from '../components/SideList/SideList';
-import VideoDetail from '../components/VideoDetail/VideoDetail';
+import Layout from '../components/Layout';
+import SideList from '../components/SideList';
+import VideoDetail from '../components/video/VideoDetail';
 
 const Watch = () => {
   return (

@@ -1,9 +1,9 @@
 import React, { useEffect, useContext } from 'react';
-import Layout from '../components/Layout/Layout';
+import Layout from '../components/Layout';
 import { fetchPopularDate } from '../apis/index';
 import { Store } from '../store/index';
-import VideoGrid from '../components/VideoGrid/VideoGrid';
-import VideoGridItem from '../components/VideoGridItem/VideoGridItem';
+import VideoGrid from '../components/video/VideoGrid';
+import VideoGridItem from "../components/video/VideoGridItem";
 
 
 const Top = () => {
