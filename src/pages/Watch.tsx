@@ -7,7 +7,7 @@ const Watch = () => {
   return (
     <Layout>
       <VideoDetail />
-      <SideList />
+      {/* <SideList /> */}
     </Layout>
   )
 }
