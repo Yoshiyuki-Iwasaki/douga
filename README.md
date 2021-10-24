@@ -69,3 +69,13 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 # movieTower
+url:
+
+## 使用技術
+- TypeScript
+- React
+- Styled-components (CSS in JS)
+- Storybook
+- Jest
+- Cloud Firestore(DB)
+- Firebase Hosting(Hosting)
